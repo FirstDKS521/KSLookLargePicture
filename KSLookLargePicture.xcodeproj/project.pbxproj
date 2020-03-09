@@ -13,6 +13,9 @@
 		3022B087238A8CDF00B14912 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3022B086238A8CDF00B14912 /* main.m */; };
 		3022B091238A8CDF00B14912 /* KSLookLargePictureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3022B090238A8CDF00B14912 /* KSLookLargePictureTests.m */; };
 		3022B09C238A8CDF00B14912 /* KSLookLargePictureUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3022B09B238A8CDF00B14912 /* KSLookLargePictureUITests.m */; };
+		3022B0AB238A8CF900B14912 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3022B0AA238A8CF900B14912 /* RootViewController.m */; };
+		3022B0AE238A9EC800B14912 /* KSLargeImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3022B0AD238A9EC800B14912 /* KSLargeImageView.m */; };
+		5E82B24425C61255E7A61775 /* libPods-KSLookLargePicture.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3411C27AC6016D59B7331FC0 /* libPods-KSLookLargePicture.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,13 @@
 		3022B097238A8CDF00B14912 /* KSLookLargePictureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KSLookLargePictureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3022B09B238A8CDF00B14912 /* KSLookLargePictureUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSLookLargePictureUITests.m; sourceTree = "<group>"; };
 		3022B09D238A8CDF00B14912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3022B0A9238A8CF900B14912 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		3022B0AA238A8CF900B14912 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		3022B0AC238A9EC800B14912 /* KSLargeImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSLargeImageView.h; sourceTree = "<group>"; };
+		3022B0AD238A9EC800B14912 /* KSLargeImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSLargeImageView.m; sourceTree = "<group>"; };
+		3411C27AC6016D59B7331FC0 /* libPods-KSLookLargePicture.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KSLookLargePicture.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1FDCC3951AEF963D00C0A3F /* Pods-KSLookLargePicture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KSLookLargePicture.release.xcconfig"; path = "Target Support Files/Pods-KSLookLargePicture/Pods-KSLookLargePicture.release.xcconfig"; sourceTree = "<group>"; };
+		EA8FB9DC005F7A4EBF92BFAD /* Pods-KSLookLargePicture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KSLookLargePicture.debug.xcconfig"; path = "Target Support Files/Pods-KSLookLargePicture/Pods-KSLookLargePicture.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E82B24425C61255E7A61775 /* libPods-KSLookLargePicture.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +91,8 @@
 				3022B08F238A8CDF00B14912 /* KSLookLargePictureTests */,
 				3022B09A238A8CDF00B14912 /* KSLookLargePictureUITests */,
 				3022B07B238A8CDC00B14912 /* Products */,
+				951581F421254EEF42C48E68 /* Pods */,
+				A90D524BB55B6608E142397F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +111,10 @@
 			children = (
 				3022B07D238A8CDC00B14912 /* AppDelegate.h */,
 				3022B07E238A8CDC00B14912 /* AppDelegate.m */,
+				3022B0A9238A8CF900B14912 /* RootViewController.h */,
+				3022B0AA238A8CF900B14912 /* RootViewController.m */,
+				3022B0AC238A9EC800B14912 /* KSLargeImageView.h */,
+				3022B0AD238A9EC800B14912 /* KSLargeImageView.m */,
 				3022B080238A8CDF00B14912 /* Assets.xcassets */,
 				3022B082238A8CDF00B14912 /* LaunchScreen.storyboard */,
 				3022B085238A8CDF00B14912 /* Info.plist */,
@@ -124,6 +141,23 @@
 			path = KSLookLargePictureUITests;
 			sourceTree = "<group>";
 		};
+		951581F421254EEF42C48E68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA8FB9DC005F7A4EBF92BFAD /* Pods-KSLookLargePicture.debug.xcconfig */,
+				D1FDCC3951AEF963D00C0A3F /* Pods-KSLookLargePicture.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A90D524BB55B6608E142397F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3411C27AC6016D59B7331FC0 /* libPods-KSLookLargePicture.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,6 +165,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3022B0A0238A8CDF00B14912 /* Build configuration list for PBXNativeTarget "KSLookLargePicture" */;
 			buildPhases = (
+				C75CEB2AA7E423106B86EAEC /* [CP] Check Pods Manifest.lock */,
 				3022B076238A8CDC00B14912 /* Sources */,
 				3022B077238A8CDC00B14912 /* Frameworks */,
 				3022B078238A8CDC00B14912 /* Resources */,
@@ -248,13 +283,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C75CEB2AA7E423106B86EAEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KSLookLargePicture-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3022B076238A8CDC00B14912 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3022B0AE238A9EC800B14912 /* KSLargeImageView.m in Sources */,
 				3022B087238A8CDF00B14912 /* main.m in Sources */,
 				3022B07F238A8CDC00B14912 /* AppDelegate.m in Sources */,
+				3022B0AB238A8CF900B14912 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +477,7 @@
 		};
 		3022B0A1238A8CDF00B14912 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA8FB9DC005F7A4EBF92BFAD /* Pods-KSLookLargePicture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -432,6 +495,7 @@
 		};
 		3022B0A2238A8CDF00B14912 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1FDCC3951AEF963D00C0A3F /* Pods-KSLookLargePicture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
